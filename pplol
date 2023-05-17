@@ -1,0 +1,217 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 18 | Scripts: 3 | Modules: 0
+local G2L = {};
+
+-- StarterGui.Menu
+G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"]["Name"] = [[Menu]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.Menu.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["2"]["Size"] = UDim2.new(0, 302, 0, 235);
+G2L["2"]["Position"] = UDim2.new(0.4110429584980011, 0, 0.2565130293369293, 0);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.Menu.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.Menu.Main.In
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["4"]["Size"] = UDim2.new(0, 264, 0, 191);
+G2L["4"]["Position"] = UDim2.new(0.05960264801979065, 0, 0.08085106313228607, 0);
+G2L["4"]["Name"] = [[In]];
+
+-- StarterGui.Menu.Main.In.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+-- StarterGui.Menu.Main.In.fg
+G2L["6"] = Instance.new("TextButton", G2L["4"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(142, 141, 140);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 167, 0, 23);
+G2L["6"]["Name"] = [[fg]];
+G2L["6"]["Text"] = [[Activate(dont press too much)]];
+G2L["6"]["Position"] = UDim2.new(0.16624103486537933, 0, 0.8367385864257812, 0);
+
+-- StarterGui.Menu.Main.In.fg.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+-- StarterGui.Menu.Main.In.fg.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+-- StarterGui.Menu.Main.In.fg.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["6"]);
+
+
+-- StarterGui.Menu.Main.In.title
+G2L["a"] = Instance.new("TextLabel", G2L["4"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Size"] = UDim2.new(0, 176, 0, 26);
+G2L["a"]["Text"] = [[PP Script By Noremius]];
+G2L["a"]["Name"] = [[title]];
+G2L["a"]["BackgroundTransparency"] = 0.5;
+G2L["a"]["Position"] = UDim2.new(0.1666666716337204, 0, 0.047120414674282074, 0);
+
+-- StarterGui.Menu.Main.In.title.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+
+
+-- StarterGui.Menu.Main.In.ChangeLog
+G2L["c"] = Instance.new("Frame", G2L["4"]);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["c"]["Size"] = UDim2.new(0, 154, 0, 109);
+G2L["c"]["Position"] = UDim2.new(0.18939393758773804, 0, 0.2146596908569336, 0);
+G2L["c"]["Name"] = [[ChangeLog]];
+
+-- StarterGui.Menu.Main.In.ChangeLog.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+-- StarterGui.Menu.Main.In.ChangeLog.title
+G2L["e"] = Instance.new("TextLabel", G2L["c"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Size"] = UDim2.new(0, 154, 0, 26);
+G2L["e"]["Text"] = [[--Change Log--]];
+G2L["e"]["Name"] = [[title]];
+G2L["e"]["BackgroundTransparency"] = 0.5;
+G2L["e"]["Position"] = UDim2.new(-0.0021645682863891125, 0, 0.0287717767059803, 0);
+
+-- StarterGui.Menu.Main.In.ChangeLog.title.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+
+
+-- StarterGui.Menu.Main.In.ChangeLog.title
+G2L["10"] = Instance.new("TextLabel", G2L["c"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0, 154, 0, 26);
+G2L["10"]["Text"] = [[1.Nothing rn]];
+G2L["10"]["Name"] = [[title]];
+G2L["10"]["BackgroundTransparency"] = 0.5;
+G2L["10"]["Position"] = UDim2.new(-0.0021645682863891125, 0, 0.32234975695610046, 0);
+
+-- StarterGui.Menu.Main.In.ChangeLog.title.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+
+
+-- StarterGui.Menu.Main.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.Menu.Main.In.fg.LocalScript
+local function C_7()
+local script = G2L["7"];
+	-- Put this code in a LocalScript within a GUI Button
+	local button = script.Parent
+	local debounce = false
+	
+	button.MouseButton1Click:Connect(function()
+		if debounce then
+			return
+		end
+	
+		debounce = true
+	
+		local hatName = "Pal Hair" -- Replace with the actual name of the hat
+		local character = game.Players.LocalPlayer.Character
+		local hat = character:FindFirstChild(hatName)
+	
+		if hat and hat:IsA("Accessory") then
+			local hatHandle = hat:FindFirstChildWhichIsA("BasePart")
+			if hatHandle then
+				local offset = Vector3.new(0, -2.8, -3) -- Adjust the amount of movement as desired
+				local originalPosition = hatHandle.Position
+				local newPosition = originalPosition + offset
+	
+				hatHandle.Position = newPosition
+	
+				debounce = false
+				hat.Handle.Mesh:Destroy()
+			end
+		end
+		--2 code
+		
+	end)
+	
+end;
+task.spawn(C_7);
+-- StarterGui.Menu.Main.In.fg.LocalScript
+local function C_8()
+local script = G2L["8"];
+	-- Put this code in a LocalScript within a GUI Button
+	local button = script.Parent
+	local debounce = false
+	
+	button.MouseButton1Click:Connect(function()
+		if debounce then
+			return
+		end
+	
+		debounce = true
+	
+		local hatName = "Hat1" -- Replace with the actual name of the hat
+		local character = game.Players.LocalPlayer.Character
+		local hat = character:FindFirstChild(hatName)
+	
+		if hat and hat:IsA("Accessory") then
+			local hatHandle = hat:FindFirstChildWhichIsA("BasePart")
+			if hatHandle then
+				local offset = Vector3.new(0, -3, -1.2) -- Adjust the amount of movement as desired
+				local originalPosition = hatHandle.Position
+				local newPosition = originalPosition + offset
+	
+				hatHandle.Position = newPosition
+	
+				debounce = false
+				hat.Handle.Mesh:Destroy()
+			end
+		end
+		--2 code
+		
+	end)
+	
+end;
+task.spawn(C_8);
+-- StarterGui.Menu.Main.LocalScript
+local function C_12()
+local script = G2L["12"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+end;
+task.spawn(C_12);
+
+return G2L["1"], require;
